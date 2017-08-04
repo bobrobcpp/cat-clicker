@@ -1,0 +1,100 @@
+html{
+
+  }
+
+header{
+  display: flex;
+}
+
+body{
+    display: block;
+}
+
+
+img{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  float: none;
+
+/*  vertical-align: middle;*/
+
+}
+#title{
+  width: 30%;
+  margin:auto;
+}
+
+.click-count{
+  display: block;
+  width: 20%;
+  margin:0 auto;
+  font-size: 32px;
+  vertical-align: bottom;
+}
+
+.click-box{
+  display: block;
+  width: 80%;
+}
+
+#container{
+  width:80%;
+  margin:0 auto;
+  display: flex;
+  padding: 10px;
+  height: 300px;
+}
+
+.container-mini{
+  padding:20px;
+  width:70%;
+  margin:0 auto;
+/*  vertical-align: middle;*/
+  display: inline;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  display:inline-block;
+}
+
+#image-box{
+  display: inline;
+  height: auto;
+/*  vertical-align: middle;*/
+  max-height: 100%;
+   overflow: hidden;
+
+}
+
+#list-container{
+  padding:20px;
+  width:30%;
+  margin:0 auto;
+  vertical-align: middle;
+  display: inline;
+  text-align: center;
+}
+
+#adminBox{
+width: 40%;
+display: block;
+float: none;
+
+}
+
+.aLabel{
+  width:50%;
+  display: block;
+}
+
+.aInput{
+  width:50%;
+  display: block;
+}
+
+button{
+  margin:20px;
+}
