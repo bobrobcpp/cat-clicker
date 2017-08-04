@@ -99,15 +99,19 @@ var adminView = {
       var saveButton = form.appendChild(document.createElement('button'));
       setAttributes(saveButton, { "id": "saveButton"});
       saveButton.innerHTML = 'Save';
-      saveButton.addEventListener('click', function myFunc(){
+      saveButton.addEventListener('click', function myFunc(evt){
+        // debugger;
+        evt.preventDefault();
         var saveName = document.getElementById('name').value;
         var saveUrl = document.getElementById('url').value;
         var saveClickCat = document.getElementById('clickCat').value;
-        var adminCat = octupus.getCurrentCat;
+        var adminCat = octupus.getCurrentCat();
         adminCat.name = saveName;
         adminCat.url = saveUrl;
         adminCat.clickCount = saveClickCat;
         octupus.updateCatProperties(adminCat);
+        return;
+        // octupus.setCurrentCat(adminCat);
         // alert("Here");
       });
 
